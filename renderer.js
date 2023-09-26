@@ -7,7 +7,11 @@
  */
 
 (async() => {
+
+    // Run a function that gets data from main.js
     console.log(await window.exposed.getStuffFromMain())
     
+    // Run a function sends data to main.js
     await window.exposed.sendStuffToMain('Stuff from renderer')
+    
 })()
